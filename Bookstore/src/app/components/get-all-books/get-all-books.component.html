@@ -1,0 +1,20 @@
+<div style="margin-left:160px;">
+    <div style="margin-top:20px;">
+        <span style="font:normal normal bold 20px Roboto;margin-top:25px;">Books
+        <span style="font:normal 10px Roboto;color: gray;">({{noOfBooks}} items)</span></span>
+    </div>
+    <div class="books-container" *ngFor = "let book of booksList">
+        <div class="books">
+            <div class="book-img-div">
+                <img class="book-img" src="{{book.bookImage}}">
+            </div>
+            <div class="book-desc">
+                <span style="font: normal normal bold 14px/19px Roboto;height:19px;">{{book.bookName}}</span>
+                <span style="font: normal normal normal 10px/13px Roboto;color: #878787;
+                height:14px;opacity: 1;">by {{book.author}}</span>
+                <span style="font: normal normal bold 12px/16px Roboto;height:16px">Rs. {{book.price}}</span>
+            </div>
+        </div>
+    </div>
+
+</div>

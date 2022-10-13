@@ -1,0 +1,103 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(183, 186, 186);
+    height: 100%;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    margin-left: 21px;
+    width: 300px;
+    height: 391px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
+    opacity: 1;
+
+}
+
+.card1-span{
+    margin-top: 30px;
+    margin-left: 70px;
+    font-weight: bold;
+    width: 209px;
+    height: 24px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    text-transform: uppercase;
+    opacity: 1;
+    
+}
+
+.card2{
+    height:400px;
+    width:300px;
+}
+
+#Indicator{
+    margin-left: -60px;
+    width: 10%;
+    border: none;
+    background: #B3290B;
+    height: 3px;
+    margin-top: -2px;
+    transform: translateX(100px);
+}
+
+.btn1{
+    
+    width: 72px;
+    height: 33px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal  20px/33px Roboto;
+    letter-spacing: 0px;
+    color: #878787;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.input-field{
+    width: 246px;
+    height: 25px;
+}
+
+.buttons{
+    border:none; 
+    background:none;
+    cursor: pointer;
+}
+
+.button-signup{
+    width: 100%;
+    background-color: #A03037;
+    height: 37px;
+    border-radius: 3px;
+    font: normal normal normal 15px/20px Roboto;
+    color: antiquewhite;
+}
+:host ::ng-deep{
+    .mat-form-field-infix{
+        width: 256px;
+        padding-top: 0px;
+        border-top: 0px;
+    }
+    .mat-form-field-wrapper{
+        padding-bottom: 10px;
+    }
+    .mat-error{
+        margin-top: 5px;
+    }
+    .mat-flat-button{
+        padding: 0px;
+    }
+    }

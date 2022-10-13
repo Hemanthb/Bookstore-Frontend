@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="card1">
+        <img src="../../../assets/cart.png" style="margin-top: 37px;margin-left: 33px;width: 245px;
+        height: 245px;border-radius: 100%;">
+        <span class="card1-span">ONLINE BOOK SHOPPING</span>
+    </div>
+    <mat-card class="card2">
+        <div style="display:flex;gap:100px;">
+            <button class="btn1" mat-flat-button style="margin-top:22px;margin-left:22px;">LOGIN</button>
+            <button routerLink="/register" class="btn1" mat-flat-button style="margin-top:22px;margin-right:22px;">SIGNUP</button>
+            
+        </div>
+        <div style="margin-left:22px;margin-right:22px;margin-top:10px;">
+            <form [formGroup]="loginForm" (ngSubmit) = "onSubmit()" style="align-items: center;">
+                <div style="display: flex; flex-direction:column;">
+                    <span>Email Id</span>
+                    <mat-form-field appearance="outline">
+                        <input matInput  type="text" class="input-field" formControlName="email">
+                        <mat-error>Enter Email Id</mat-error>
+                    </mat-form-field>
+                </div>
+                <div style="display: flex; flex-direction:column;">
+                    <span>Password</span>
+                    <mat-form-field appearance="outline">
+                        <input matInput type="password" class="input-field" formControlName="password">
+                        <mat-error>Enter Password</mat-error>
+                    </mat-form-field>
+                </div>
+                
+                <button class="buttons button-signup" >Signup</button>
+            </form>
+        </div>
+        <div style="height: 10px; border-bottom: 1px solid black; text-align: center;margin: 15px 50px 15px 50px;">
+            <span style="font: normal normal bold 14px/18px Meiryo UI; background-color: #ffffff; padding: 0 10px;">
+              OR
+            </span>
+        </div>
+        <div style="display:flex;flex-direction:row;margin:22px;gap:8px;">
+            <button class="button-fb" >Facebook</button>
+            <button class="button-google" >Google</button>
+        </div>
+    </mat-card>
+</div>
