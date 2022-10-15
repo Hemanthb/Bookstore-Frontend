@@ -10,7 +10,7 @@ export class GetAllBooksComponent implements OnInit {
 
   booksList:any;
   noOfBooks:any;
-
+  bookToView:any;
   constructor(private bookService:BookServiceService, private router:Router) { }
 
   ngOnInit(): void {
@@ -23,6 +23,13 @@ export class GetAllBooksComponent implements OnInit {
       this.noOfBooks = response.data.length;
       console.log("No of Books - "+this.noOfBooks);
     })
+  }
+
+  viewBook(data:any){
+    this.bookToView = data
+    console.log(this.bookToView);
+    localStorage.setItem("bookid",data._id);
+    this.router.navigateByUrl("/home/quickview");
   }
 
 }

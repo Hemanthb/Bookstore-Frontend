@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GetAllBooksComponent } from './components/get-all-books/get-all-books.component';
+import { QuickViewBookComponent } from './components/quick-view-book/quick-view-book.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { GetAllBooksComponent } from './components/get-all-books/get-all-books.c
     RegistrationComponent,
     LoginComponent,
     DashboardComponent,
-    GetAllBooksComponent
+    GetAllBooksComponent,
+    QuickViewBookComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { GetAllBooksComponent } from './components/get-all-books/get-all-books.c
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

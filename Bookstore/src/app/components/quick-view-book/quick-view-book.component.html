@@ -1,0 +1,44 @@
+<div style="margin-left:160px;margin-right:100px;">
+    <div style="margin-top: 20px;margin-bottom:20px;">
+        <span routerLink="/home"
+            style=" cursor: pointer; font-weight:500; font-size: 15px; margin-right: 5px; opacity: .5;">Home / </span>
+        <span>Book</span>
+    </div>
+    <div class="book-details">
+        <div class="div-1">
+            <div class="book-img">
+                <img src="{{getBookById.bookImage}}">
+            </div>
+            <div class="buttons">
+                <button class="bag-btn">ADD TO BAG</button>
+                <button class="wish-btn">WISHLIST</button>
+            </div>
+        </div>
+        <div class="div-2">
+            <span style="font: normal normal bold 25px/19px Roboto;height:25px;">{{getBookById.bookName}}</span>
+            <span style="font: normal normal normal 18px/13px Roboto;color: #878787;
+            height:18px;opacity: 1;padding-top: 10px;">by {{getBookById.author}}</span>
+            <span style="font: normal normal bold 25px/16px Roboto;height:25px;padding-top: 20px;">RS.{{getBookById.price}}</span>
+            <div class="description">
+                <div class="desc-tag">
+                    <ul style="padding-inline-start:0px;color: #878787">
+                        <li><span style="font: normal normal normal 18px/13px Roboto;color: #878787;">Book Detail</span></li>
+                    </ul>
+                </div>
+                <p style="padding-bottom: 25px;">{{getBookById.description}}</p>
+            </div>
+            <div class="feedback">
+                <span>Customer Feedback</span>
+                <div class="rate-form">
+                    <span>Overall rating</span>
+                    <ngb-rating [max]="5" [(rate)]="stars"></ngb-rating>
+                    <textarea matInput style="padding-top:10px; border: none; outline: none;"
+                        placeholder="Write your review"></textarea>
+                    <button class="submitButton">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>

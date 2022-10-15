@@ -20,4 +20,9 @@ export class HttpServiceService {
     console.log("Base Url",this.baseUrl);
     return this.httpClient.get(this.baseUrl+url, token && httpOptions);
   }
+  GetByIdService(url: string,data:any, token:boolean, httpOptions: any){
+    console.log("url",url);
+    console.log("Base Url",this.baseUrl);
+    return this.httpClient.request(this.baseUrl+url, data, token && httpOptions);
+  }
 }

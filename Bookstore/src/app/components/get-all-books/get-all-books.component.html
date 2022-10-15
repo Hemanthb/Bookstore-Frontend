@@ -3,7 +3,7 @@
         <span style="font:normal normal bold 20px Roboto;margin-top:25px;">Books
         <span style="font:normal 10px Roboto;color: gray;">({{noOfBooks}} items)</span></span>
     </div>
-    <div class="books-container" *ngFor = "let book of booksList">
+    <div class="books-container" *ngFor = "let book of booksList" (click)="viewBook(book)">
         <div class="books">
             <div class="book-img-div">
                 <img class="book-img" src="{{book.bookImage}}">
@@ -16,5 +16,5 @@
             </div>
         </div>
     </div>
-
+    <!--<app-quick-view-book [bookid]="bookToView"></app-quick-view-book>-->
 </div>

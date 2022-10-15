@@ -19,5 +19,15 @@ export class BookServiceService {
     };
   return this.httpService.GetService('books/',false,httpOptions);
   }
+  getBookById(data:any){
+    const httpOptions = {
+      Headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        Authorization: 'null'
+      })
+
+    };
+  return this.httpService.GetService('books/'+data,false,httpOptions);
+  }
 
 }
